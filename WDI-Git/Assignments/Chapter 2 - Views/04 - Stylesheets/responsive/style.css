@@ -1,0 +1,28 @@
+body{
+    margin:0;
+    box-sizing: border-box;
+}
+
+.hero{
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    position: relative;
+    background-image: url(https://images.unsplash.com/photo-1439694458393-78ecf14da7f9?q=80&fm=jpg&s=643e44f5177366de6cc914c8bcfbe064);
+    transform: translate(-50%, -50%);
+    
+}
+
+.text h1, .text h2{
+    color:white;
+    text-align: center;
+}
+
+.text {
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    top: 50%;
+    margin-top: -64px;
+}

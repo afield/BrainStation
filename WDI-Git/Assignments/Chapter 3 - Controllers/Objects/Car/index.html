@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Car Objects</title>
+    <!--Links to stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <h1>Create an Object Assignment</h1>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="jumbotron container">
+        <section class="container">
+            <div class="page-header">
+                <h1>Car Factory<small> - Just fill out all fields and click submit!</small></h1>
+            </div>
+        </section>
+        <div class="container">
+            <form class="form-horizontal" role="form" id="create-form">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="make">Make:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="make" placeholder="Enter make of the car" required>
+                    </div>
+                </div>
+                <!--make form group -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="model" required>Model:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="model" placeholder="Enter model of the car" required>
+                    </div>
+                </div>
+                <!--model form group -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="colour" value="Select">Colour:</label>
+                    <div class="col-sm-10">
+                        <select class="form-control" id="colour" required>
+                            <option value="" disabled selected>Select colour of the car</option>
+                            <option>Red</option>
+                            <option>Black</option>
+                            <option>Blue</option>
+                            <option>Green</option>
+                            <option>Grey</option>
+                            <option>White</option>
+                            <option>Silver</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                </div>
+                <!--Colour form group -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="amount">Amount:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="amount" placeholder="Select how many cars to manufacture" required>
+                    </div>
+                </div>
+                <!--Amount form group -->
+
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button class="btn btn-success">Submit</button>
+                    </div>
+                </div>
+                <!--Submit form group -->
+            </form>
+            <!--Car creation -->
+        </div>
+        <!--Container -->
+        <div class="container">
+            <h2>Cars Manufactured</h2>
+            <table class="table" id="car-table">
+                <thead>
+                    <tr>
+                        <th>Make</th>
+                        <th>Model</th>
+                        <th>Colour</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+         <button type="submit" id="back" class="btn btn-warning">Back</button>        
+        </div> <!--container 2-->
+    </div>
+    <!--Jumbotron -->
+    <!--links to Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
