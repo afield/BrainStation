@@ -1,0 +1,17 @@
+.eachEntry{
+
+	border: 5px dotted black;
+	background-color: gray;
+}
+
+.eachEntry2{
+
+	border: 5px dashed black;
+	background-color: red;
+}
+
+h2 {
+	color: green;
+}
+
+/* my super sweet styling skillz, they pay the billz*/

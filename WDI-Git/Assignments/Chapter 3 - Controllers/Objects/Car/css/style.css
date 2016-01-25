@@ -1,14 +1,16 @@
+body, html { min-height: 100%; }
+
 body{
     font-size: 15pt;
     background-image: url('img/car.jpg');
+    background-repeat: no-repeat;
     height:100%;
     margin:0;
-    background-size: 110%;
-    background-repeat: no-repeat;
+    background-size: cover;
+    font-variant: small-caps;
+    font-weight: BOLD;
 }
-h1 small{
-    color: darkslategrey;
-}
+
 .form-control{
     width:70%;
     margin-left:7%;
@@ -21,7 +23,8 @@ h1 small{
 .jumbotron{
     border-radius: 30px;
     background-color: rgba(210,170,109,0.9);
-    border: solid black 4px
+    border: solid black 4px;
+    color: maroon;
 }
 
 #submit{
@@ -30,9 +33,25 @@ h1 small{
     font-size: 15pt;
 }
 .navbar, navbar-brand, a{
-    background-color: maroon;
-    border: solid maroon 2px;
+    background-color: rgba(210,170,109,0.9);
+
+    background-color: rgba(128,0,0,0.9);
+    border: solid black 2px;
     border-radius: 2px;
     font-size: 19pt;
     color: peachpuff;
+}
+#view-container{
+    display: none;
+}
+
+.page-header{
+    border-style: none;
+
+}
+.table>thead>tr>th{
+    border-bottom-color: maroon;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+     border-top-color: maroon;
 }
