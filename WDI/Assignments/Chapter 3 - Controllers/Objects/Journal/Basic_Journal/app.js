@@ -15,10 +15,11 @@ $(document).ready(function () {
 
 });
 
-function Entry (title, author, content) {
+function Entry (title, author, content, tags) {
 	this.title = title;
 	this.author = author;
 	this.content = content;
+    this.tags = tags;
 }
 
 //classes or constructor functions
@@ -32,9 +33,9 @@ Journal.prototype.addEntry = function(frm) {
 	var title = frm.find("input[name='title']").val();
 	var author = frm.find("input[name='author']").val();
 	var content = frm.find("textarea[name='content']").val();
-
+    var tags = frm.find("input[name='tags']").val();
 	// makes new entry with inputs
-	var entry = new Entry(title, author, content);
+	var entry = new Entry(title, author, content, tags);
 
 	//adds entry to our Journal entries array
 	this.entries.unshift(entry);
@@ -65,14 +66,24 @@ Journal.prototype.displayEntries = function() {
 		html += "<h2> Title: " + this.entries[i].title + "</h2>";
 		html += "<h3> Author:" + this.entries[i].author + "</h3>";
 		html += "<p>" + this.entries[i].content + "</p>";
+		html += "<p>" + this.entries[i].tags + "</p>";
 		html += "</div></section><hr>"
 
 	}
 	//injects our string html into our index file at theJournal class element
 	$(".theJournal").html(html);
+    
+
 };
 
-
+    var nameKey = "bleh";
+var search = function(nameKey, entries){
+    for (var i=0; i < entries.length; i++) {
+        if (entries[i] == nameKey) {
+            console.log(entries[i].toString());
+        }
+    }
+}
 //variables
 var myJournal = new Journal();
 

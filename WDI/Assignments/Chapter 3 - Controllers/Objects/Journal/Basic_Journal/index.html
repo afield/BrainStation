@@ -2,6 +2,11 @@
 <html>
 <head>
 	<title></title>
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-tokenizer.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="app.css">
 </head>
 <body>
@@ -14,6 +19,10 @@
 
 		Author
 		<input type="text" name="author" placeholder="author">
+		
+		<p>&nbsp;</p>
+		Tags
+          <input class="span4" type="text" data-provide="tokenizer" value="" name="tags">
 
 		<p>&nbsp;</p>
 		Content
@@ -23,13 +32,19 @@
 		<button>Make Journal Entry!</button>
 		
 		<p>&nbsp;</p>
+		
+
 
 	</form>
 
 	<div class="theJournal">
 	</div>
 
-
+       <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-tokenizer.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+    <script src="assets/js/application.js"></script>
 	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="app.js"></script>
 </body>
