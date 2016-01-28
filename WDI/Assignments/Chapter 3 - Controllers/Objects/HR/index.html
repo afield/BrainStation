@@ -9,6 +9,7 @@
     <!--STEP 1 --STYLESHEETS -->
     <!--Links to stylesheets -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.theme.min.css">
     <link rel="stylesheet" href="css/datepicker.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -16,7 +17,7 @@
 </head>
 
 <body>
-   <!--STEP 3 - NAV -->
+    <!--STEP 3 - NAV -->
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -27,30 +28,36 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <h1>Human Resources</h1>
+                <a class="navbar-brand" href="#">Human Resources</a>
             </div>
-            <div class="navbar navbar-right">
-                <ul>
-                    <li>hola</li>
-                    <li></li>
-                    <li></li>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Employees</a></li>
                 </ul>
+            </div>
         </div>
         <!-- /.container-fluid -->
+
     </nav>
-<!--END OF NAV -->
-   
-   <!-- STEP 5 - MAIN CONTAINER -->
+    <!--END OF NAV -->
+
+    <!-- STEP 5 - CREATE EMPLOYEE CONTAINER -->
     <div class="jumbotron container">
         <section class="container">
             <div class="page-header">
                 <h1>Add Employee</h1>
             </div>
         </section>
-        <div class="container" id="create-container">
+        <div class="container" id="main">
             <form class="form-horizontal" role="form" id="create-form">
-               <!--First Name -->
-                 <div class="form-group">
+                <!--First Name -->
+                <div class="form-group">
                     <label class="control-label col-sm-2" for="first-name">First Name:</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" id="first-name" placeholder="Enter first name here" required>
@@ -64,21 +71,28 @@
                     </div>
                 </div>
                 <!--DOB -->
-                <div class="well"> 
-                  <div class="form-group">
-                      <label  class="control-label col-sm-2" for="dob" required>Date of Birth</label>
-                      <input type="date" style="width:200px;" id="dob" class="form-control" id="exampleInputDOB1" placeholder="Date of Birth">
+                <div class="well">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="dob" required>Date of Birth</label>
+                        <input type="date" style="width:200px;" id="dob" class="form-control" id="exampleInputDOB1">
                     </div>
                 </div>
-                <!--Colour form group -->
+                <!--Position form group -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="position">Position:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="position" placeholder="Hourly wage amount here" required>
+                    </div>
+                </div>
+                <!--Wage form group -->
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="wage">Wage:</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" id="wage" placeholder="Hourly wage amount here" required>
                     </div>
                 </div>
-                <!--Amount form group -->
-
+               
+                 <!--submit button form group -->
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                         <button id="submit" class="btn btn-success">Submit</button>
@@ -86,17 +100,53 @@
                 </div>
                 <!--Submit form group -->
             </form>
-            <!--Car creation -->
         </div>
+        <!--End of create Employee Container
     </div>
-<!--END OF MAIN JUMBOTRON CONTAINER -->
-    
-    <!--STEP 2 - JS -->
-    <!--links to Scripts -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="/js/bootstrap-datepicker.js"></script>
-    <script src="js/app.js"></script>
+    <!--END OF CREATE EMPLOYEE JUMBOTRON CONTAINER -->
+
+        <!-- STEP 5 - VIEW EMPLOYEES CONTAINER -->
+        <div class="jumbotron container">
+            <section class="container">
+                <div class="page-header">
+                    <h1>View Employees</h1>
+                </div>
+            </section>
+            <div class="table-responsive">
+                <table class="table" id="view-table">
+                    <thead>
+                        <tr>
+                            <th>Employee ID</th>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Position</th>
+                            <th>Hire Date</th>
+                            <th>Hourly Wage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--<tr>-->
+                            <!--<th>EmployeeNumber</th>-->
+                            <!--<td>Name</td>-->
+                            <!--<td>Age</td>-->
+                            <!--<td>Hire Date</td>-->
+                            <!--<td>Edit</td>-->
+                            <!--<td>Delete</td>-->
+                        <!--</tr>-->
+                    </tbody>
+                </table>
+            </div>
+            <!--End of view Employees Container
+    </div>
+    <!--END OF VIEW EMPLOYEES JUMBOTRON CONTAINER -->
+
+
+            <!--STEP 2 - JS -->
+            <!--links to Scripts -->
+            <script src="js/jquery.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="/js/bootstrap-datepicker.js"></script>
+            <script src="js/app.js"></script>
 </body>
 
 </html>

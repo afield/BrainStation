@@ -1,0 +1,8 @@
+.well{
+    border-color: transparent;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    padding: 0px;
+    padding-left: 17px; 
+    margin: auto;
+}
