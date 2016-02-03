@@ -24,7 +24,7 @@
 	<p>{{ ["Cat", "Dog", "Bird", "Dragon","Cat","Mouse","Moose"] | filter:"Cat"}}</p>
 
 <!-- Step 5: add the orderBy filter to this array of names in ng-repeat so they are ordered alphabetically -->
-	<div ng-repeat="name in ctrl.names  | orderBy: '-name'">{{name}}</div>
+	<div ng-repeat="name in ctrl.names  | orderBy: '-name' ">{{name}}</div>
 
 <!-- Step 6: add the orderBy filter to this array of numbers in the ng-repeat so they are ordered lowest to highest -->
 	<div ng-repeat="item in ctrl.items | orderBy: item : true">{{item}}</div>

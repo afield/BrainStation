@@ -2,10 +2,10 @@ function lastLetterFilter() {
    return function(input_string) {
 
    		//write your filter here
-        tempString = input_string.substring(input_string.length-1);
-        tempChar
+        var tempString = input_string.substring(0,input_string.length-1);
+        var tempChar = input_string.substring(input_string.length-1).toUpperCase();
        
-        return console.log(temp.toUpperCase()+input_string.substring(input_string.substring(input_string.length-1)));
+        return tempString + tempChar;
         
         }
     };
