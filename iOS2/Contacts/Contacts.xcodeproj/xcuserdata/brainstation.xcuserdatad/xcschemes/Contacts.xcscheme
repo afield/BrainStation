@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BBABBC661C5843D1007872F9"
+               BlueprintIdentifier = "BB99C9621C622D760014CC47"
                BuildableName = "Contacts.app"
                BlueprintName = "Contacts"
                ReferencedContainer = "container:Contacts.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BBABBC661C5843D1007872F9"
+            BlueprintIdentifier = "BB99C9621C622D760014CC47"
             BuildableName = "Contacts.app"
             BlueprintName = "Contacts"
             ReferencedContainer = "container:Contacts.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BBABBC661C5843D1007872F9"
+            BlueprintIdentifier = "BB99C9621C622D760014CC47"
             BuildableName = "Contacts.app"
             BlueprintName = "Contacts"
             ReferencedContainer = "container:Contacts.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BBABBC661C5843D1007872F9"
+            BlueprintIdentifier = "BB99C9621C622D760014CC47"
             BuildableName = "Contacts.app"
             BlueprintName = "Contacts"
             ReferencedContainer = "container:Contacts.xcodeproj">

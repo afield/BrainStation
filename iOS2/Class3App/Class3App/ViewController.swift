@@ -12,16 +12,14 @@ class ViewController: UIViewController {
 
     
     @IBOutlet var numLabel:UILabel!
-    var num = 2
+    var contacts = "My Contacts"
     
     @IBAction func addButtonTapped(){
        
-        num += 2
-        numLabel.text = "\(num)"
+        numLabel.text = contacts
     }
     @IBAction func subtractButtonTapped(){
-        num -= 2
-        numLabel.text = "\(num)"
+        numLabel.text = "Hola"
     
     }
     

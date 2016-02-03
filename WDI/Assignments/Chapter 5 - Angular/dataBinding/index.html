@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+    <script type="text/javascript" src="js/vendor/angular.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/myController.ctrl.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="MyController as ctrl">
+   
+    <h1>Data Binding Challenge</h1>
+    <form class="angularForm">
+            <input type="text" ng-model="ctrl.name">        
+        <h2>
+            {{ctrl.name}}
+        </h2>
+    </form>
+    <form class="jQueryForm">
+        <input type="text" name="test" class="myInput">
+        <h2 class="myOutput"></h2>
+    </form>
+    <script type="text/javascript" src="js/vendor/jquery.js"></script>
+    <script type="text/javascript" src="js/app2.js"></script>
+</body>
+</html>

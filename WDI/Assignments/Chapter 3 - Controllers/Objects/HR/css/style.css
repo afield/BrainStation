@@ -6,3 +6,14 @@
     padding-left: 17px; 
     margin: auto;
 }
+#emp-search{
+    display: block;
+    padding-top: 20px;
+}
+
+#view{
+    display: inline;
+}
+#view-table-div{
+    padding-top: 25px;
+}

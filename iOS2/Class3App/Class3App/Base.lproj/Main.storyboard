@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Item-->
@@ -17,31 +18,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovO-y3-SFB">
-                                <rect key="frame" x="146" y="34" width="25" height="52"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhp-6n-P39">
-                                <rect key="frame" x="100" y="129" width="30" height="30"/>
-                                <state key="normal" title="+"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhp-6n-P39">
+                                <rect key="frame" x="20" y="120" width="30" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="EEM-WP-99Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="&lt;"/>
                                 <connections>
                                     <action selector="addButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ba1-nf-518"/>
+                                    <action selector="lastButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="83h-6l-EtU"/>
+                                    <action selector="nextButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="3JG-bh-tkf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fq8-FC-hLw">
-                                <rect key="frame" x="171" y="129" width="30" height="30"/>
-                                <state key="normal" title="-"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fq8-FC-hLw">
+                                <rect key="frame" x="550" y="120" width="30" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="&gt;"/>
                                 <connections>
+                                    <action selector="nextButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="lsd-Ug-OPa"/>
                                     <action selector="subtractButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nz4-hV-aos"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Contacts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovO-y3-SFB">
+                                <rect key="frame" x="100" y="28" width="401" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ovO-y3-SFB" secondAttribute="trailing" constant="79" id="6CB-dw-9Br"/>
+                            <constraint firstItem="ovO-y3-SFB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FcH-cr-Qhr"/>
+                            <constraint firstItem="mhp-6n-P39" firstAttribute="baseline" secondItem="fq8-FC-hLw" secondAttribute="baseline" id="XES-uo-jnJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fq8-FC-hLw" secondAttribute="trailing" id="a4k-Pv-fxK"/>
+                            <constraint firstItem="mhp-6n-P39" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="aUm-2E-vDL"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="mhp-6n-P39" secondAttribute="leading" id="lYO-Bm-Hrb"/>
+                            <constraint firstItem="ovO-y3-SFB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="tx3-Pp-egO"/>
+                            <constraint firstItem="ovO-y3-SFB" firstAttribute="leading" secondItem="mhp-6n-P39" secondAttribute="trailing" constant="50" id="vWv-Lw-IDs"/>
+                            <constraint firstItem="mhp-6n-P39" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="xJO-Ij-LC2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="vWv-Lw-IDs"/>
+                                <exclude reference="xJO-Ij-LC2"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="bxU-Bb-NUJ"/>
                     <connections>
+                        <outlet property="contactLabel" destination="ovO-y3-SFB" id="oRo-US-DYr"/>
                         <outlet property="numLabel" destination="ovO-y3-SFB" id="jvW-oh-fjW"/>
                         <outlet property="view" destination="8bC-Xf-vdC" id="pyU-x4-akk"/>
                     </connections>

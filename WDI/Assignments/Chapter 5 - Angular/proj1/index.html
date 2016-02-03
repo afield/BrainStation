@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+    <script type="text/javascript" src="js/vendor/angular.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/myController.ctrl.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="MyController as ctrl">
+   
+    <h1>Hello, World</h1>       
+       <div>
+           <input type="text" ng-model="ctrl.name">
+           <button ng-click="ctrl.addFriend()"></button>
+           <ul>
+               <li ng-repeat="friend in ctrl.friends">{{friend}}</li>
+           </ul>
+           <h2>{{ctrl.name}}</h2>
+           <button ng-click="ctrl.greeting()">Greet</button>
+       </div>
+       
+       <button ng-click="ctrl.hide_show = !ctrl.hide_show">Hide/Show</button>
+       <div class="hide-show" ng-show="ctrl.hide_show">
+           Hide/Show this test
+       </div>
+        
+</body>
+</html>

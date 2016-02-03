@@ -2,40 +2,17 @@
 //  ViewController.swift
 //  Contacts
 //
-//  Created by BrainStation on 2016-01-26.
+//  Created by BrainStation on 2016-02-03.
 //  Copyright © 2016 BrainStation. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet var contactNameLabel:UILabel!
-
-    var contactsArray = ["Bob","Gazpacho"];
+    var myContacts = ["Amanda","Ashley","Michelle","Gary"]
     
-    let name = contactsArray[0]
-    contactNameLabel.text = "\(name)"
+    @IBOutlet weak var myContactsTitleLabel: UILabel!
     
-    @IBAction func nextButtonTapped(){
-        
-    }
-    
-    @IBAction func lastButtonTapped(){
-        
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-      
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 

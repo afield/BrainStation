@@ -1,0 +1,7 @@
+/*You dont need to change anything here*/
+.image{
+	width: 300px;
+	height: 400px;
+	background-image: url("./images/dog.jpg");
+	background-size: cover; 
+}

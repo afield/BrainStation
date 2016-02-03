@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <title>Filters Code Along</title>
+    <script src="js/vendor/angular.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/currency.fltr.js"></script>
+
+</head>
+<body ng-app="DemoApp" ng-controller="AppCtrl as ctrl">
+    <h1>
+        Checkout Amount: {{ctrl.amounts | my_currency: '&pound;'}}
+    </h1>
+    
+    <button ng-click="ctrl.addItem()">Add Item</button>
+</body>
+</html>

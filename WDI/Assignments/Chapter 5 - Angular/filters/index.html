@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="js/vendor/angular.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/insultCtrl.js"></script>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body ng-app="insultApp" ng-controller="InsultCtrl as ctrl">
+  <div class="container">
+    
+    <h1 class="text-center">Insult Generator</h1>
+    <div class="jumbotron">
+      <h2 class="text-center">{{ctrl.insult}}</h2>
+    </div>
+    <div class="text-center">
+      <button class="btn btn-primary btn-lg" ng-click="ctrl.replaceInsult()">Sayith</button>
+    </div>
+    
+  </div>
+  
+
+</body>
+</html>
