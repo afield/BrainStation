@@ -5,6 +5,8 @@
   <script src="js/vendor/angular.js"></script>
   <script src="js/app.js"></script>
   <script src="js/insultCtrl.js"></script>
+  <script src="js/titleCaseFilter.js"></script>
+  <script src="js/insultService.js"></script>
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -15,7 +17,7 @@
     
     <h1 class="text-center">Insult Generator</h1>
     <div class="jumbotron">
-      <h2 class="text-center">{{ctrl.insult}}</h2>
+      <h2 class="text-center">{{ctrl.insult | title_case_filter}}</h2>
     </div>
     <div class="text-center">
       <button class="btn btn-primary btn-lg" ng-click="ctrl.replaceInsult()">Sayith</button>
