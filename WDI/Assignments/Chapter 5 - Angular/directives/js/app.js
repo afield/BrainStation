@@ -26,7 +26,7 @@ TodoCtrl.prototype.checkTodos = function(){
     }return true;
 }
 
-this. newTodo = "";     
+this.newTodo = "";     
 TodoCtrl.prototype.addTodo = function(){
     this.todos.push({text: this.newTodo, done:false});
 console.log("todo added")
