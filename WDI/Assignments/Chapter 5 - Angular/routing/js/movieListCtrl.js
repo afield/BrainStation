@@ -30,12 +30,12 @@ MovieListCtrl.prototype.clickMovie = function(movie){
 
 }
 
-app.filter('pagination', function(){
-    return function(input, start){
-        start = +start;
-        return input.slice(start);
-    };
-});
+// app.filter('pagination', function(){
+//     return function(input, start){
+//         start = +start;
+//         return input.slice(start);
+//     };
+// });
 
 
 

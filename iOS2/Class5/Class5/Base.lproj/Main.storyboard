@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,17 +18,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rrw-Wl-Uzn">
-                                <rect key="frame" x="40" y="28" width="240" height="128"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rrw-Wl-Uzn">
+                                <rect key="frame" x="36" y="28" width="248" height="130"/>
                                 <color key="backgroundColor" red="1" green="0.7256444372974411" blue="0.36354800729464043" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e0U-ya-E2V">
+                                <rect key="frame" x="36" y="181" width="248" height="260"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="e0U-ya-E2V" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="181" id="0ST-0Q-Dbv"/>
+                            <constraint firstItem="e0U-ya-E2V" firstAttribute="top" secondItem="Rrw-Wl-Uzn" secondAttribute="bottom" constant="25" id="2Ae-U7-Vv1"/>
+                            <constraint firstItem="Rrw-Wl-Uzn" firstAttribute="trailing" secondItem="e0U-ya-E2V" secondAttribute="trailing" id="3fr-le-lP2"/>
+                            <constraint firstItem="e0U-ya-E2V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="3rF-NC-PNW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="e0U-ya-E2V" secondAttribute="bottom" constant="39" id="9ce-WX-CLH"/>
+                            <constraint firstItem="Rrw-Wl-Uzn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Etq-Sm-22m"/>
+                            <constraint firstItem="e0U-ya-E2V" firstAttribute="leading" secondItem="Rrw-Wl-Uzn" secondAttribute="leading" id="RDP-Af-DKP"/>
+                            <constraint firstItem="Rrw-Wl-Uzn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Yz5-qX-xEI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="e0U-ya-E2V" secondAttribute="bottom" constant="39" id="aEM-fL-uyb"/>
+                            <constraint firstItem="e0U-ya-E2V" firstAttribute="top" secondItem="Rrw-Wl-Uzn" secondAttribute="bottom" constant="25" id="eiM-mj-1CA"/>
+                            <constraint firstItem="e0U-ya-E2V" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="181" id="gAK-BL-ha5"/>
+                            <constraint firstItem="Rrw-Wl-Uzn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iTW-S1-9n2"/>
+                            <constraint firstItem="e0U-ya-E2V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="msW-T5-GqW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Etq-Sm-22m"/>
+                                <exclude reference="iTW-S1-9n2"/>
+                                <exclude reference="0ST-0Q-Dbv"/>
+                                <exclude reference="2Ae-U7-Vv1"/>
+                                <exclude reference="aEM-fL-uyb"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="349"/>
         </scene>
     </scenes>
 </document>

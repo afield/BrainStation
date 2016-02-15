@@ -10,7 +10,7 @@
       <label for="search" >Sort</label>
       
       <!--TODO #6: show the list of sort options form the controller in this dropdown-->
-      <select class="form-control" ng-model="ctrl.selectedOption" ng-init="0" ng-options="sortOption.label for sortOption in ctrl.sortOptions"></select>
+      <select class="form-control" ng-model="ctrl.selectedOption" ng-options="sortOption.label for sortOption in ctrl.sortOptions"></select>
     </div>
   </form>
 
@@ -19,7 +19,7 @@
   <!--TODO #5: Only show movies where the title matches what the user typed into the search box-->
   <!--TODO #6: Sort the movies based on what the user selects in the sort dropdown-->
   <!--TODO #7: Setup pagination so that only 4 movies are shown at a time-->
-  <div class="media movie-list-item" ng-repeat="movie in ctrl.movies | pagination: ctrl.curPage * ctrl.moviesPerPage | limitTo: ctrl.moviesPerPage | filter:{Title:search} | orderBy: ctrl.selectedOption.sortField : ctrl.selectedOption.reverse" ng-click="ctrl.clickMovie(movie)">
+  <div class="media movie-list-item" ng-repeat="movie in ctrl.movies | limitTo: ctrl.moviesPerPage | filter:{Title:search} | orderBy: ctrl.selectedOption.sortField : ctrl.selectedOption.reverse" ng-click="ctrl.clickMovie(movie)">
     <div class="media-left">
       <div class="poster-container">
         <!--TODO #3: Show the movie poster-->

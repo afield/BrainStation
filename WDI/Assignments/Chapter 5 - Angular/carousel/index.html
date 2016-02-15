@@ -20,16 +20,16 @@
     </div>
     <div>
       <!--TODO #4: clicking previous should show the previous image-->
-      <button ng-click="ctrl.previous()">Previous</button>
+      <button ng-click="ctrl.previous()" ng-disabled="ctrl.min">Previous</button>
       
       <!--TODO #5: 
         Dynamically set which image number is being shown 
         and the total number of images 
       -->
-      <span>1 of 4</span>
+      <span>{{ctrl.image +1}} of 4</span>
       
       <!--TODO #4: clicking next should show the next image-->
-      <button ng-click="ctrl.next()">Next</button>
+      <button ng-click="ctrl.next()" ng-disabled="ctrl.max">Next</button>
     </div>
     
 
